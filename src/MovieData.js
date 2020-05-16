@@ -8,7 +8,7 @@ export class MovieData extends Component {
     }
     componentDidMount() {
         try {
-        axios.get(`http://www.omdbapi.com/?apikey=2ff3447e&i=${this.props.ImdbData}`)
+        axios.get(`https://www.omdbapi.com/?apikey=2ff3447e&i=${this.props.ImdbData}`)
         .then(res=> res.data)
         .then(res=> {
           this.setState({

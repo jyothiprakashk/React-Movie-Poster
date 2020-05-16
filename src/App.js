@@ -12,7 +12,7 @@ export class App extends Component {
   }
   searchEvent=e=> {
     e.preventDefault()
-    axios.get(`http://www.omdbapi.com/?apikey=2ff3447e&s=${this.state.search}&plot=full`)
+    axios.get(`https://www.omdbapi.com/?apikey=2ff3447e&s=${this.state.search}&plot=full`)
     .then(res=> res.data)
     
     .then(res=>{
