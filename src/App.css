@@ -86,3 +86,7 @@ button {
   margin: 7px;
 
 }
+.error {
+  font-size: 20px;
+  margin-top: 5%;
+}

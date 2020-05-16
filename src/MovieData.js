@@ -40,6 +40,7 @@ export class MovieData extends Component {
 
         let Hours1=2
         const Minute1=30
+        
         if (Runtime==="N/A") {
             return <div className="container">
             <div >
@@ -67,6 +68,7 @@ export class MovieData extends Component {
        
         
         return (
+            
             
             <div className="container">
                 <div >

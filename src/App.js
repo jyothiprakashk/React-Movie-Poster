@@ -6,7 +6,7 @@ import NetworkDetector from './NetworkDetector';
 
 export class App extends Component {
   state={
-    movieList:[],
+    movieList:["data"],
     search:"",
     isDisconnected: false
   }
@@ -40,7 +40,7 @@ export class App extends Component {
       <div className="header">React Movie Poster</div>
       <form onSubmit={this.searchEvent} className="form">
           <input onChange={this.handleChange} value={this.state.search}/>
-          <button type="submit">submit</button>
+          <button type="submit">Search</button>
       </form>
       <div className="Movies">
       {movieList.length > 0 ?(
@@ -49,7 +49,7 @@ export class App extends Component {
                <MovieData ImdbData={data} key={data} />
         ))
       ): (
-        <p>Search Your Favourite Movies</p>
+        <p className="error"> OOPS!! No Results Found</p>
       )}
       </div>
       
