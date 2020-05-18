@@ -54,7 +54,7 @@ export class MovieData extends Component {
                 <div className="flex">
                 <p>{Hours1}:{Minute1}</p>
                 <div className="star">
-                        <span class="fa fa-star checked"></span>
+                        <span className="fa fa-star checked"></span>
                         <p>{imdbRating}</p>
                     </div>
                 </div>
@@ -82,7 +82,7 @@ export class MovieData extends Component {
                     <div className="flex">
                     <p>{Hours}:{Minute}</p>
                     <div className="star">
-                        <span class="fa fa-star checked"></span>
+                        <span className="fa fa-star checked"></span>
                         <p>{imdbRating}</p>
                     </div>
                     </div>
